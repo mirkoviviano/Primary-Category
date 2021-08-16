@@ -25,6 +25,8 @@ if (!defined('ABSPATH')) exit;
 
 define('PLUGIN_DIR', plugin_dir_path(__FILE__));
 
-include PLUGIN_DIR . 'classes/class-primary-cat.php';
+include PLUGIN_DIR . 'includes/primary-category.php';
+include PLUGIN_DIR . 'shortcode.php';
 
 $categoryBox = new \MKR\MVPrimaryCategory\PrimaryCategory();
+$shortCode   = new \MKR\MVPrimaryCategory\PrimaryCategoryShortcode();

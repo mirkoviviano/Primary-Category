@@ -4,6 +4,9 @@
  * The constructor adds actions to the hooks "add_meta_boxes" and "save_post":
  * the former adds a metabox to the post page whilst the latter adds/updates
  * a metadata value to the post's metadata set.
+ * 
+ * @author Mirko Viviano 
+ * 
  */
 namespace MKR\MVPrimaryCategory;
 
@@ -64,7 +67,7 @@ class PrimaryCategory{
 		global $post;
 
 	    // Get primary category associated with article ID.
-		$selectedCategory = get_post_meta( $post->ID, 'primaryCategory', true );
+		$selectedCategory = str_replace(" ", "_", strtolower(get_post_meta( $post->ID, 'primaryCategory', true )));
 		
 		// Gets all categories associated with the post ID.
 	    $categories = get_the_category();
@@ -74,8 +77,11 @@ class PrimaryCategory{
 			// Create HTML select tag
 		    $html = '<select name="primaryCategory" id="primaryCategory">';
 	    	foreach ($categories as $category) {
+				// Remove space from category name and replace it with an underscore "_"; 
+				// Set lowecase on the whole category name.
+				$categoryName = str_replace(" ", "_", strtolower($category->name));
 				// Populate select with post's categories
-			    $html .= '<option value="' . $category->name . '" ' . selected( $selectedCategory, $category->name, false ) . '>' . $category->name . '</option>';
+			    $html .= '<option value="' . $categoryName . '" ' . selected( $selectedCategory, $categoryName, false ) . '>' . $category->name . '</option>';
 		    }
 		    $html .= '</select>';
 	    } 
