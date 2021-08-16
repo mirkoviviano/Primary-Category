@@ -39,6 +39,7 @@ class PrimaryCategoryShortcode {
 		$atts = array_change_key_case((array)$atts, CASE_LOWER);
 		
 		$atts = shortcode_atts(
+			// Default shortcode values
 			array(
 				'category' => 'homepage_articles',
 				'template' => 'simple',
@@ -48,12 +49,14 @@ class PrimaryCategoryShortcode {
 			'posts-primary-category' 
 		);
 
+		// Query posts based on the category value
 		$query_posts = new \WP_Query( array(
 			'post_type'     => 'any', // TODO: change if implement selection of post type
 			'meta_key'      => 'primaryCategory',
 			'meta_value'    => $atts['category']
 		));
 
+		// Select the template to render based on the value of "template". Defualt is set to "simple".
 		switch($atts['template']){
 			default: 
 			case "simple":
