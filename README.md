@@ -1,5 +1,5 @@
 # Primary-Category
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)  
 The plugin is an attribution tool. It has multiple features that allow users to
 attribute their content by including Creative Commons license ([Choose a
 License](https://creativecommons.org/choose/)) on their WordPress website. This
@@ -20,7 +20,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ## Background
 Many publishers use categories as a means to logically organize their content. However, many pieces of content have more than one category. Sometimes it’s useful to designate a primary category for posts (and custom post types). On the front-end, we need the ability to query for posts (and custom post types) based on their primary categories.
 
-## Your Mission
+## Mission
 Create a WordPress plugin that allows publishers to designate a primary category for posts. We’ve intentionally left implementation details out so you have a chance to show us strategic thinking. 
 
 ## Installation
