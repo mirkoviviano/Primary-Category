@@ -44,6 +44,8 @@ Shortcode parameters
 The deployed plugin can be found at 
 [http://54.36.163.35/sage/](http://54.36.163.35/sage/)
 
+You can visit [http://54.36.163.35/sage/wp-admin](http://54.36.163.35/sage/wp-admin) to access the backend (*credentials* mirko:mirko).
+
 ## Time Tracking
 The proper development started on Monday 16th August 2021. The plugin has been considered finished on Tuesday 17th August 2021. The total time needed to develop such plugin has been of approximately 10 hours. 
 
