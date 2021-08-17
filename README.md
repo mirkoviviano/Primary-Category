@@ -1,4 +1,14 @@
 # Primary-Category
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+The plugin is an attribution tool. It has multiple features that allow users to
+attribute their content by including Creative Commons license ([Choose a
+License](https://creativecommons.org/choose/)) on their WordPress website. This
+includes default, post, page and media attribution.
+
+## Description
+Simple WordPress plugin to set a primary category for posts, custom post types, pages, etc.
+
+## Details
 Contributors: Mirko Viviano  
 Tags: category, primary category, categories, posts, pages, articles  
 Requires at least: 3.0.1  
@@ -37,3 +47,7 @@ The deployed plugin can be found at
 ## Time Tracking
 The proper development started on Monday 16th August 2021. The plugin has been considered finished on Tuesday 17th August 2021. The total time needed to develop such plugin has been of approximately 10 hours. 
 
+## License
+* [`license.txt`](license.txt) ([GPLv2 or later][gplv2] License)
+
+[gplv2]: https://opensource.org/licenses/GPL-2.0 "GNU General Public License version 2 | Open Source Initiative"
