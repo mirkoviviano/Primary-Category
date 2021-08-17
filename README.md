@@ -24,11 +24,11 @@ The plugin allows users to
 * Select a template to render the posts wherever on the website
 
 ## Shortcode usage
-`[posts-primary-category category="xxx" template="xxx" columns="xxx"]`
-Shortcode parameters
-`category` – The posts category to render. Defaults to `homepage_articles`.
-`template` – The template to render. Defaults to `simple`.
-`columns` – The number of columns to display. Defaults to `4`.
+`[posts-primary-category category="xxx" template="xxx" columns="xxx"]`  
+Shortcode parameters  
+`category` – The posts category to render. Defaults to `homepage_articles`.  
+`template` – The template to render. Defaults to `simple`.  
+`columns` – The number of columns to display. Defaults to `4`.  
 
 ## Deployed application
 The deployed plugin can be found at 
